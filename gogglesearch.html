@@ -1,0 +1,22 @@
+<html>
+	<head></head>
+	<body>
+		I'm feeling locky!<br/>
+		<input id="searchbox" type="text" maxlength="255">
+		<input type="submit" value="Goggle" onclick="GoggleSearch()" />
+		<div id="button"></div>
+
+		<script type="text/javascript">
+		var SearchBoxInput = document.getElementById("searchbox");
+		var SearchResults  = document.getElementById("button");
+		
+		function GoggleSearch() 
+		{
+		    SearchResults.innerHTML = "";
+		    SearchResults.innerHTML += "Your search for: \"" 
+		                         + SearchBoxInput.value 
+		                         + "\" resulted to 0 hits<br/>";
+		}
+		</script>
+	</body>
+</html>
